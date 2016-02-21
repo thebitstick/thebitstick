@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext);
+
+body {
+  background-color: #252525;
+  color: #d9d9d9;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 110px;
+  margin-top: 110px;
+  margin-bottom: -10px;
+}
+
+#header, .header {
+  font-family: Lato, sans-serif;
+  text-align: center;
+}
+
+.para, #para {
+  font-family: Inconsolata, sans-serif;
+  text-align: center;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.start, .links {
+  font-weight: 700;
+  text-align: center;
+}
+
+#links a:link, #links a:visited, #links a:active {
+  text-decoration: none;
+  color: #909090;
+}
+
+#links a:hover {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+
+.links a:link, .links a:visited, .links a:active {
+  text-decoration: none;
+  color: #909090;
+}
+
+.links a:hover {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+
+::-webkit-scollbar {
+  display: none;
+}
