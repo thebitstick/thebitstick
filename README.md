@@ -1,3 +1,3 @@
 # Main site
-[https://www.bitstick.rip](https://www.bitstick.rip)
+[https://bitstick.rip](https://bitstick.rip)
 
