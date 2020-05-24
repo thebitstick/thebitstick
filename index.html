@@ -16,20 +16,42 @@
 </head>
 <body style="color:white; background-color:black">
 <pre>
+$ cat /proc/sys/kernel/osrelease
+5.6.14-zen1-1-zen
+$ cat /proc/cpuinfo | grep "model name"
+model name	: AMD Ryzen 5 3600 6-Core Processor
 $ whoami
 thebitstick
-$ bat /etc/motd
+$ cat $HOME/.config/motd
 Hi, My name is Jorge, and I go by TheBitStick (and sometimes makotoadmirer or hieisuki) online.
-## You can follow me on my various socials:
-$ cd /dev/soc/
-$ bat *
-* [Mastodon: @thebitstick@librem.one](https://m.bitstick.rip)
-* [Twitter: @thebitstick](https://t.bitstick.rip)
-* [Steam: thebitstick](https://s.bitstick.rip)
-* [Github: thebitstick](https://g.bitstick.rip)
-* [Tumblr: @thebitstick](https://b.bitstick.rip)
-* [Matrix: @thebitstick:librem.one](https://f.bitstick.rip)
-* [YouTube](https://y.bitstick.rip)
+$ ls -la /dev/tcp/social.librem.one/
+lrwxrwxrwx  38  root  20 May 11:58  .
+lrwxrwxrwx  38  root  20 May 11:58  ..
+lrwxrwxrwx  38  root  20 May 11:58  @thebitstick@librem.one -> https://m.bitstick.rip
+$ ls -la /dev/tcp/twitter.com/
+lrwxrwxrwx  38  root  20 May 11:58  .
+lrwxrwxrwx  38  root  20 May 11:58  ..
+lrwxrwxrwx  38  root  20 May 11:58  @thebitstick -> https://t.bitstick.rip
+$ ls -la /dev/tcp/steamcommunity.com/
+lrwxrwxrwx  38  root  20 May 11:58  .
+lrwxrwxrwx  38  root  20 May 11:58  ..
+lrwxrwxrwx  38  root  20 May 11:58  thebitstick -> https://s.bitstick.rip
+$ ls -la /dev/tcp/github.com/
+lrwxrwxrwx  38  root  20 May 11:58  .
+lrwxrwxrwx  38  root  20 May 11:58  ..
+lrwxrwxrwx  38  root  20 May 11:58  thebitstick -> https://g.bitstick.rip
+$ ls -la /dev/tcp/tumblr.com/
+lrwxrwxrwx  38  root  20 May 11:58  .
+lrwxrwxrwx  38  root  20 May 11:58  ..
+lrwxrwxrwx  38  root  20 May 11:58  @thebitstick -> https://b.bitstick.rip
+$ ls -la /dev/tcp/chat.librem.one/
+lrwxrwxrwx  38  root  20 May 11:58  .
+lrwxrwxrwx  38  root  20 May 11:58  ..
+lrwxrwxrwx  38  root  20 May 11:58  @thebitstick:librem.one -> https://f.bitstick.rip
+$ ls -la /dev/tcp/youtube.com/
+lrwxrwxrwx  38  root  20 May 11:58  .
+lrwxrwxrwx  38  root  20 May 11:58  ..
+.rwxrwxrwx  38  root  20 May 11:58  https://y.bitstick.rip
 $ exit
 </pre>
 </body>
